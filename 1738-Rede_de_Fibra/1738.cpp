@@ -3,25 +3,26 @@
 
 using namespace std;
 
-char Floyd_Warshal(char *adjacencias, int a){
-    char D[a][a] = {};
-    for (int i = 1; i <= a; i++) {
-        for(int j = 1; j <= a; j++) {
-            for(int k = 1; k <= a; k++) {
+struct Grafo{
+    list<int> aresta;
+    string empresas;
+};
 
-            }
-        }
-    }
-    return D;
+
+char Floyd_Warshal(Grafo g[], int n){
+    
 }
 
 main() {
     int n, a, b;
     string provedores;
     
-    while ((cin >> n) && n > 0) {
-        char adjacencias[n + 1][n + 1];
-        cin >> a >> b >> provedores;
+    while ((cin >> n) && n != 0) {
+        Grafo vertices[n + 1];
+        for(int i = 1; (i <= n) && ((a != 0) && (b != 0)); i++){
+            cin >> a >> b >> provedores;
+            vertices[a].aresta.push_front(b);
+        }
         
     }
 }
